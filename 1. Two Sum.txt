@@ -1,4 +1,0 @@
-My steps to learn how to answer this question (C):
-    - https://leetcode.com/problems/two-sum/solutions/127810/two-sum/
-    - https://benhoyt.com/writings/hash-table-in-c/
-    - try it your self, then see again, https://leetcode.com/problems/two-sum/solutions/127810/two-sum/

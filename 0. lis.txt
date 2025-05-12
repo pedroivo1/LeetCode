@@ -1,3 +1,0 @@
-1. Two Sum.py (must eficient)
-1. Two Sum.c (normal)
-2. Add Two Numbers.py (normal)

@@ -1,0 +1,10 @@
+1. Two Sum.py (must eficient)
+1. Two Sum.c (normal)
+2. Add Two Numbers.py (normal)
+
+
+fontes:
+  1. Two Sum.c
+    Steps to learn the most efficient answer:
+        - https://leetcode.com/problems/two-sum/solutions/127810/two-sum/
+        - https://benhoyt.com/writings/hash-table-in-c/
