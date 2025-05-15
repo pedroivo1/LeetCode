@@ -1,28 +1,32 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <stddef.h>
 
-bool isPalindrome(int x) {
-    char str[10] = {'\0'};
-    snprintf(str, sizeof(str), "%d", x);
-    printf("%s", str);
-    int i = sizeof(str);
-    while (i)
+size_t strLen(const char *str)
+{
+    size_t length = 0;
+    while (str[length] != '\0')
     {
-
+        length++;
     }
-    
-    return 0;
+    return length;
 }
 
-int main() {
-    int num = 182736;
+bool isPalindrome(int x)
+{
+    if (x < 0 || x%10 == 0 && x != 0) return false;
 
-    // ⬇️ Aqui está a chamada da função
-    if (isPalindrome(num)) {
-        printf("%d é um palíndromo.\n", num);
-    } else {
-        printf("%d não é um palíndromo.\n", num);
+    char str[11];
+    snprintf(str, sizeof(str), "%d", x);
+    int length = strLen(str);
+    int i = 0;
+    while (i < length / 2)
+    {
+        if (str[length - 1 - i] != str[i])
+        {
+            return false;
+        }
+        i++;
     }
-
-    return 0;
+    return true;
 }
